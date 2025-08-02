@@ -33,8 +33,44 @@
             <hr>
         </div>
     </section>
+    <!-- end hero -->
+
+    <section id="countdown" class="countdown d-flex flex-column align-items-center justify-content-end w-100 min-vh-100 p-3 mx-auto text-center">
+        <div class="slideshow">
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+        </div>
+        <div class="container mb-5"> <!-- mb-5 untuk margin bottom -->
+            <h5>The Wedding of</h5>
+            <h1>Isma & Ecep</h1>
+            <!-- Countdown Timer -->
+            <div id="wedding-countdown" class="mt-4">
+                <div class="d-flex justify-content-center gap-3">
+                    <div>
+                        <span id="days" class="display-5">00</span>
+                        <div>Hari</div>
+                    </div>
+                    <div>
+                        <span id="hours" class="display-5">00</span>
+                        <div>Jam</div>
+                    </div>
+                    <div>
+                        <span id="minutes" class="display-5">00</span>
+                        <div>Menit</div>
+                    </div>
+                    <div>
+                        <span id="seconds" class="display-5">00</span>
+                        <div>Detik</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end countdown section -->
 
     <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="asset/js/custom.js"></script>
 </body>
 
 </html>
