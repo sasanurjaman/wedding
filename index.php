@@ -14,7 +14,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Libertinus+Sans:ital@0;1&family=Merienda:wght@700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Merienda:wght@300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -68,6 +68,15 @@
         </div>
     </section>
     <!-- end countdown section -->
+
+    <section id="welcome" class="welcome">
+        <div class="container text-center">
+            <h2 class="pt-5">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</h2>
+            <h3 class="mb-3 mt-3">Assalamuálaikum Wr. Wb.</h3>
+            <p>Tanpa mengurangi rasa hormat, kami mengundang Bpk/Ibu/Saudara/i</p>
+            <p>serta kerabat sekalian untuk menghadiri acara pernikahan kami :</p>
+        </div>
+    </section>
 
     <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="asset/js/custom.js"></script>

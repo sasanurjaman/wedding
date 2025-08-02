@@ -11,6 +11,27 @@ body {
   text-shadow: var(--text-shadow);
 }
 
+.welcome {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.welcome h2 {
+  font-family: 'Readex Pro', sans-serif;
+  font-weight: 500;
+}
+
+.welcome h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.welcome p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
 .hero::before {
   content: '';
   position: absolute;
@@ -118,16 +139,16 @@ body {
 
 .slide:nth-child(2) {
   background-image: url('/asset/img/2.jpg');
-  animation-delay: 10s;
+  animation-delay: 5s;
 }
 
 .slide:nth-child(3) {
   background-image: url('/asset/img/3.jpg');
-  animation-delay: 20s;
+  animation-delay: 10s;
 }
 .slide:nth-child(4) {
   background-image: url('/asset/img/4.jpg');
-  animation-delay: 30s;
+  animation-delay: 15s;
 }
 
 @keyframes slideshow {
