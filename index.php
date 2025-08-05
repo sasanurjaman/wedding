@@ -7,8 +7,7 @@
     <title>Isma & Ecep</title>
     <!-- Bootstrap CSS -->
     <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- custom css -->
-    <link rel="stylesheet" href="asset/css/style.css">
+
     <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- Google Fonts -->
@@ -16,39 +15,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Merienda:wght@300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
     <!-- Swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css" rel="stylesheet">
 
+    <!-- custom css -->
+    <link rel="stylesheet" href="asset/css/style.css">
     <style>
-        .swiper,
-        .swiper-slide,
-        .swiper-slide img {
-            height: 100%;
-        }
 
-        .bg-cover {
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        .swiper-slide img {
-            object-fit: cover;
-        }
-
-        .couple-info {
-            background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
-            z-index: 10;
-        }
-
-        .couple-info h2 {
-            font-family: 'Merienda', cursive;
-            font-weight: bold;
-        }
-
-        .couple-info p {
-            font-family: 'Playfair Display', serif;
-            font-weight: 400;
-        }
     </style>
 </head>
 
@@ -71,7 +45,7 @@
     <!-- end hero -->
 
     <section id="countdown" class="countdown d-flex flex-column align-items-center justify-content-end w-100 min-vh-100 p-3 mx-auto text-center">
-        <div class="slideshow">
+        <div class="slideshow" data-aos="zoom-out" data-aos-duration="2000">
             <div class="slide"></div>
             <div class="slide"></div>
             <div class="slide"></div>
@@ -105,7 +79,7 @@
     <!-- end countdown section -->
 
     <section id="welcome" class="welcome p-3 mx-auto">
-        <div class="container text-center">
+        <div class="container text-center" data-aos="fade-up" data-aos-duration="2000">
             <h2 class="pt-5">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</h2>
             <h3 class="mb-3 mt-3">Assalamuálaikum Wr. Wb.</h3>
             <p>Tanpa mengurangi rasa hormat, kami mengundang Bpk/Ibu/Saudara/i</p>
@@ -115,7 +89,7 @@
 
     <!-- Section Couple -->
     <section id="couple" class="couple-section d-flex align-items-center w-100">
-        <div class="container-fluid g-0">
+        <div class="container-fluid g-0" data-aos="fade-up" data-aos-duration="2000">
             <div class="row g-0">
 
                 <!-- Bride Column -->
@@ -128,9 +102,9 @@
                         </div>
                     </div>
                     <div class="couple-info position-absolute bottom-0 start-0 end-0 text-center p-4 text-white">
-                        <h2 class="mb-2">Isma Ariyanti Juliani</h2>
+                        <h2 class="mb-2">Isma Ariyanty Juliani</h2>
                         <p class="mb-0">Putri dari</p>
-                        <p class="mb-0">Bpk. Roki (Alm) & Ibu. Yati (Almh)</p>
+                        <p class="mb-0">Bpk. Rokib (Alm) & Ibu. Yati (Almh)</p>
                     </div>
                 </div>
 
@@ -154,36 +128,24 @@
     </section>
     <!-- end couple section -->
 
+    <section id="welcome" class="welcome p-3 mx-auto">
+        <div class="container text-center" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="pt-5">Q.S Ar - rum : 21</h2>
+            <p>"Dan diantara ayat -ayat(Nya) adalah dia menciptakan anda istri - istri dari jenismu sendiri agar kamu merasa nyaman padanya, dan dijakan(Nya) diantarmu mawaddah dan rahmah. Sebenarnya pada yang demikian itu benar - benar terdapat tanda - tanda bagi kaum yang berfikir."</p>
+        </div>
+    </section>
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script>
-        // Swiper untuk bride (normal - slide ke kiri)
-        new Swiper(".bride-swiper", {
-            loop: true,
-            autoplay: {
-                delay: 2000,
-                disableOnInteraction: false,
-            },
-            direction: 'horizontal',
-            speed: 1000,
-        });
-
-        // Swiper untuk groom (reverse - slide ke kanan)
-        new Swiper(".groom-swiper", {
-            loop: true,
-            autoplay: {
-                delay: 2000,
-                disableOnInteraction: false,
-                reverseDirection: true, // Ini yang membuat slide ke kanan
-            },
-            direction: 'horizontal',
-            speed: 1000,
-        });
-    </script>
+    <!-- AOS (Animate On Scroll) -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
 
     <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="asset/js/custom.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

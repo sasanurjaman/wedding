@@ -9,6 +9,38 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 1.2rem;
   text-shadow: var(--text-shadow);
+  background-color: var(--bg-color);
+}
+
+.swiper,
+.swiper-slide,
+.swiper-slide img {
+  height: 100%;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.swiper-slide img {
+  object-fit: cover;
+}
+
+.couple-info {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  z-index: 10;
+}
+
+.couple-info h2 {
+  font-family: 'Merienda', cursive;
+  font-weight: bold;
+}
+
+.couple-info p {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
 }
 
 .welcome {

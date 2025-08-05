@@ -33,3 +33,30 @@ const countdown = setInterval(function () {
   }
 }, 1000)
 /** end Countdown function */
+
+// Swiper untuk bride (normal - slide ke kiri)
+new Swiper('.bride-swiper', {
+  loop: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  direction: 'horizontal',
+  speed: 1000,
+})
+
+// Swiper untuk groom (reverse - slide ke kanan)
+new Swiper('.groom-swiper', {
+  loop: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+    reverseDirection: true, // Ini yang membuat slide ke kanan
+  },
+  direction: 'horizontal',
+  speed: 1000,
+})
+// end couple swiper
+
+// Initialize AOS (Animate On Scroll)
+AOS.init()
