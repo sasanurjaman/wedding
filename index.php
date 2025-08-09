@@ -18,6 +18,10 @@
     <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
     <!-- AOS (Animate On Scroll) -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css" rel="stylesheet">
+    <!-- LightGallery CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css">
+    <!-- Optional Animate.css for Hover Effect -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- custom css -->
     <link rel="stylesheet" href="asset/css/style.css">
@@ -135,6 +139,59 @@
         </div>
     </section>
 
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Gallery</h2>
+            <div id="lightgallery">
+                <a href="asset/img/1.jpg" class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="asset/img/1.jpg" class="img-fluid rounded shadow-sm" alt="Image 1">
+                </a>
+                <a href="asset/img/2.jpg" class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="asset/img/2.jpg" class="img-fluid rounded shadow-sm" alt="Image 2">
+                </a>
+                <a href="asset/img/3.jpg" class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="asset/img/3.jpg" class="img-fluid rounded shadow-sm" alt="Image 3">
+                </a>
+                <a href="asset/img/4.jpg" class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="asset/img/4.jpg" class="img-fluid rounded shadow-sm" alt="Image 4">
+                </a>
+                <a href="asset/img/gallery-1.jpg" class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="asset/img/gallery-1.jpg" class="img-fluid rounded shadow-sm" alt="Image 5">
+                </a>
+                <a href="asset/img/gallery-2.jpg" class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="asset/img/gallery-2.jpg" class="img-fluid rounded shadow-sm" alt="Image 6">
+                </a>
+                <a href="asset/img/gallery-3.jpg" class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="asset/img/gallery-3.jpg" class="img-fluid rounded shadow-sm" alt="Image 7">
+                </a>
+                <a href="asset/img/gallery-4.jpg" class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="asset/img/gallery-4.jpg" class="img-fluid rounded shadow-sm" alt="Image 8">
+                </a>
+                <a href="asset/img/gallery-6.jpg" class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="asset/img/gallery-6.jpg" class="img-fluid rounded shadow-sm" alt="Image 10">
+                </a>
+                <a href="asset/img/gallery-7.jpg" class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="asset/img/gallery-7.jpg" class="img-fluid rounded shadow-sm" alt="Image 11">
+                </a>
+                <a href="asset/img/gallery-8.jpg" class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="asset/img/gallery-8.jpg" class="img-fluid rounded shadow-sm" alt="Image 12">
+                </a>
+                <a href="asset/img/gallery-9.jpg" class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="asset/img/gallery-9.jpg" class="img-fluid rounded shadow-sm" alt="Image 13">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- LightGallery CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css">
+
+    <!-- LightGallery JS -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.min.js"></script>
+    <!-- Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- AOS (Animate On Scroll) -->
@@ -143,9 +200,6 @@
     <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="asset/js/custom.js"></script>
 
-    <script>
-        AOS.init();
-    </script>
 </body>
 
 </html>

@@ -58,5 +58,14 @@ new Swiper('.groom-swiper', {
 })
 // end couple swiper
 
+document.addEventListener('DOMContentLoaded', function () {
+  lightGallery(document.getElementById('lightgallery'), {
+    plugins: [lgZoom, lgThumbnail],
+    speed: 500,
+    download: false,
+  })
+})
+// end lightgallery
+
 // Initialize AOS (Animate On Scroll)
 AOS.init()
