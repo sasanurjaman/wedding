@@ -205,7 +205,7 @@ body {
 /* end slideshow cooldown */
 
 #lightgallery {
-  column-count: 3;
+  column-count: 4;
   column-gap: 10px;
 }
 
@@ -227,8 +227,24 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
+#gallery hr {
+  border: none;
+  height: 4px;
+  width: 100px;
+  flex-grow: 1;
+  max-width: 200px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(43, 42, 42, 0.7),
+    transparent
+  );
+}
+
 #gallery h2 {
-  font-family: 'Merienda', cursive;
+  font-family: 'Edu VIC WA NT Hand', cursive;
+  font-weight: 700;
+  color: var(--text-color);
 }
 
 #event .event-container .card {
@@ -364,6 +380,11 @@ body {
   #event .event-container .card .card-content .title-vertical {
     padding: 6px;
   }
+
+  #lightgallery {
+    column-count: 2;
+    column-gap: 10px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -381,5 +402,10 @@ body {
 
   #event .event-container .card .card-content .title-vertical {
     padding: 2px;
+  }
+
+  #lightgallery {
+    column-count: 2;
+    column-gap: 10px;
   }
 }

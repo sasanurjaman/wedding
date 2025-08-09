@@ -142,7 +142,7 @@
 
     <section id="event" class="position-relative">
         <!-- Swiper Background -->
-        <div class="swiper event-swiper position-absolute top-0 start-0 w-100 h-100 z-n1">
+        <div class="swiper event-swiper position-absolute top-0 start-0 w-100 z-n1">
             <div class="swiper-wrapper">
                 <div class="swiper-slide" style="background-image: url('asset/img/event-1.jpg'); background-size: cover; background-position: center;"></div>
                 <div class="swiper-slide" style="background-image: url('asset/img/event-2.jpg'); background-size: cover; background-position: center;"></div>
@@ -223,7 +223,7 @@
                         </div> -->
 
                         <!-- Lokasi -->
-                        <div>
+                        <div class="mb-3">
                             <p class="mb-1 fw-bold">Lokasi:</p>
                             <p class="mb-2">Lapang Voli Kompak, RT/RW 04/05 Kp. Cibojong Ds. Balewangi, Kec Cisurupan - Garut</p>
                             <a href="https://maps.app.goo.gl/UMGPifmMJdt7Ps5X7?g_st=aw" target="_blank" class="btn btn-outline-secondary mt-lg-4 mb-lg-4">
@@ -240,7 +240,11 @@
 
     <section id="gallery" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-4">Gallery</h2>
+            <div class="d-flex justify-content-center align-items-center mt-3" data-aos="fade-up" data-aos-duration="2000">
+                <hr class="my-0 mx-0">
+                <h2 class="text-center mb-4" data-aos="fade-up" data-aos-duration="1000">Gallery</h2>
+                <hr class="my-0 mx-0">
+            </div>
             <div id="lightgallery">
                 <a href="asset/img/1.jpg" class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
                     <img src="asset/img/1.jpg" class="img-fluid rounded shadow-sm" alt="Image 1">
