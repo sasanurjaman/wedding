@@ -67,5 +67,24 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 // end lightgallery
 
+const eventSwiper = new Swiper('.event-swiper', {
+  direction: 'vertical',
+  loop: true,
+  effect: 'creative',
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  creativeEffect: {
+    prev: {
+      translate: [0, '-100%', 0],
+    },
+    next: {
+      translate: [0, '100%', 0],
+    },
+  },
+  speed: 1000,
+})
+
 // Initialize AOS (Animate On Scroll)
 AOS.init()

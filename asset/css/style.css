@@ -229,6 +229,95 @@ body {
 
 #gallery h2 {
   font-family: 'Merienda', cursive;
+}
+
+#event .event-container .card {
+  width: 30rem;
+  border: 1px solid #ccc;
+  border-radius: 50px 0 0 0;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0 20px 0;
+}
+
+#event .event-container .card img {
+  width: 100%;
+  display: block;
+  border-radius: 50px 0px 0 0;
+}
+
+#event .event-container h1 {
+  font-family: 'Edu VIC WA NT Hand', cursive;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+#event .event-container hr {
+  border: none;
+  height: 4px;
+  width: 100px;
+  flex-grow: 1;
+  max-width: 200px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(43, 42, 42, 0.7),
+    transparent
+  );
+}
+
+#event .event-container .card .card-content {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+#event .event-container .card .card-content .title-vertical {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  padding: 10px;
+  background-color: #f0f0f0;
+  text-align: center;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* text-shadow 2px 2px 8px rgba(0, 0, 0, 0.6); */
+
+#event .event-container .card .description-date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+#event .event-container .card .description-date .date-number {
+  font-weight: bold;
+  line-height: 1;
+}
+
+#event .event-container .card .description-date .date-text {
+  color: var(--text-color);
+}
+
+#event .event-container .card .description-date h2 {
+  font-family: 'Merienda', cursive;
+  font-weight: 700;
+}
+
+#event .event-container .card .description-date p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+#event .event-container .card .card-content h3 {
+  font-family: 'Edu VIC WA NT Hand', cursive;
   font-weight: 700;
   color: var(--text-color);
 }
@@ -246,19 +335,34 @@ body {
   .hero h4 {
     font-size: 1.5rem;
   }
-}
 
-@media (max-width: 768px) {
+  #event .event-container .card {
+    width: 30rem;
+  }
+
   html {
     font-size: 95%;
   }
 
+  #event .event-container .card .card-content .title-vertical {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
   html {
     font-size: 85%;
   }
 
   #lightgallery {
     column-count: 2;
+  }
+  #event .event-container .card {
+    width: 85%;
+  }
+
+  #event .event-container .card .card-content .title-vertical {
+    padding: 6px;
   }
 }
 
@@ -269,5 +373,13 @@ body {
 
   #lightgallery {
     column-count: 1;
+  }
+
+  #event .event-container .card {
+    width: 55%;
+  }
+
+  #event .event-container .card .card-content .title-vertical {
+    padding: 2px;
   }
 }

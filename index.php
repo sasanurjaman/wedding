@@ -49,7 +49,7 @@
     <!-- end hero -->
 
     <section id="countdown" class="countdown d-flex flex-column align-items-center justify-content-end w-100 min-vh-100 p-3 mx-auto text-center">
-        <div class="slideshow" data-aos="zoom-out" data-aos-duration="2000">
+        <div class="slideshow">
             <div class="slide"></div>
             <div class="slide"></div>
             <div class="slide"></div>
@@ -93,7 +93,7 @@
 
     <!-- Section Couple -->
     <section id="couple" class="couple-section d-flex align-items-center w-100">
-        <div class="container-fluid g-0" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container-fluid g-0">
             <div class="row g-0">
 
                 <!-- Bride Column -->
@@ -132,12 +132,111 @@
     </section>
     <!-- end couple section -->
 
-    <section id="welcome" class="welcome p-3 mx-auto">
+    <section id="quote" class="welcome p-3 mx-auto">
         <div class="container text-center" data-aos="fade-up" data-aos-duration="1000">
             <h2 class="pt-5">Q.S Ar - rum : 21</h2>
             <p>"Dan diantara ayat -ayat(Nya) adalah dia menciptakan anda istri - istri dari jenismu sendiri agar kamu merasa nyaman padanya, dan dijakan(Nya) diantarmu mawaddah dan rahmah. Sebenarnya pada yang demikian itu benar - benar terdapat tanda - tanda bagi kaum yang berfikir."</p>
         </div>
     </section>
+    <!-- end quote section -->
+
+    <section id="event" class="position-relative">
+        <!-- Swiper Background -->
+        <div class="swiper event-swiper position-absolute top-0 start-0 w-100 h-100 z-n1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('asset/img/event-1.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="swiper-slide" style="background-image: url('asset/img/event-2.jpg'); background-size: cover; background-position: center;"></div>
+            </div>
+        </div>
+
+        <!-- Content Overlay -->
+        <div class="container event-container d-flex flex-column justify-content-center align-items-center text-center" style="min-height: 100vh;">
+            <!-- Judul Wedding / Garis / Event -->
+            <div class="d-flex justify-content-center align-items-center mt-3 mb-lg-5 p-3" data-aos="fade-up" data-aos-duration="2000">
+                <hr class="my-0 mx-0">
+                <h1 class="display-6 fw-bold m-0 px-3 text-nowrap">Wedding Event</h1>
+                <hr class="my-0 mx-0">
+            </div>
+
+            <!-- Card -->
+            <div class="card" data-aos="fade-up" data-aos-duration="2000">
+                <img src="asset/img/event-3.jpg" alt="Contoh Gambar">
+                <div class="card-content">
+                    <div class="title-vertical">
+                        <h3 class="display-4">Akad Nikah</h3>
+                    </div>
+                    <div class="description-date d-flex m-3">
+                        <!-- Tanggal -->
+                        <div class="d-flex align-items-center text-center">
+                            <div class="date-number me-2">
+                                <h2 class="fw-bold display-4">19</h2>
+                            </div>
+                            <div class="date-text text-start">
+                                Minggu,<br>Oktober 2025
+                            </div>
+                        </div>
+
+                        <!-- Garis Pemisah Estetik -->
+                        <hr class="my-2 w-100" style="border: none; height: 2px; background: linear-gradient(to right, transparent, rgba(82, 78, 78, 0.7), transparent);">
+
+                        <!-- Jam -->
+                        <p class="text-center mt-lg-3"><i class="bi bi-clock-fill"></i> 08:00 WIB s/d Selesai</p>
+                        <!-- <div class="mt-2">
+                        </div> -->
+
+                        <!-- Lokasi -->
+                        <div>
+                            <p class="mb-1 fw-bold">Lokasi:</p>
+                            <p class="mb-2">Lapang Voli Kompak, RT/RW 04/05 Kp. Cibojong Ds. Balewangi, Kec Cisurupan - Garut</p>
+                            <a href="https://maps.app.goo.gl/UMGPifmMJdt7Ps5X7?g_st=aw" target="_blank" class="btn btn-outline-secondary mt-lg-4 mb-lg-4">
+                                📍 Buka Map
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="card" data-aos="fade-up" data-aos-duration="2000">
+                <img src="asset/img/event-4.jpg" alt="Contoh Gambar">
+                <div class="card-content">
+                    <div class="title-vertical">
+                        <h3 class="display-4">Resepsi</h3>
+                    </div>
+                    <div class="description-date d-flex">
+                        <!-- Tanggal -->
+                        <div class="d-flex align-items-center text-center">
+                            <div class="date-number me-2">
+                                <h2 class="fw-bold display-4">19</h2>
+                            </div>
+                            <div class="date-text text-start">
+                                Minggu,<br>Oktober 2025
+                            </div>
+                        </div>
+
+                        <!-- Garis Pemisah Estetik -->
+                        <hr class="my-2 w-100" style="border: none; height: 2px; background: linear-gradient(to right, transparent, rgba(82, 78, 78, 0.7), transparent);">
+
+                        <!-- Jam -->
+                        <p class="text-center mt-lg-3"><i class="bi bi-clock-fill"></i> 11:00 WIB s/d Selesai</p>
+                        <!-- <div class="mt-2">
+                        </div> -->
+
+                        <!-- Lokasi -->
+                        <div>
+                            <p class="mb-1 fw-bold">Lokasi:</p>
+                            <p class="mb-2">Lapang Voli Kompak, RT/RW 04/05 Kp. Cibojong Ds. Balewangi, Kec Cisurupan - Garut</p>
+                            <a href="https://maps.app.goo.gl/UMGPifmMJdt7Ps5X7?g_st=aw" target="_blank" class="btn btn-outline-secondary mt-lg-4 mb-lg-4">
+                                📍 Buka Map
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- end event section -->
 
     <section id="gallery" class="py-5 bg-light">
         <div class="container">
