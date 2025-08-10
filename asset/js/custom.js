@@ -86,5 +86,22 @@ const eventSwiper = new Swiper('.event-swiper', {
   speed: 1000,
 })
 
+function copyText(text) {
+  // Fallback copy method
+  const tempInput = document.createElement('input')
+  tempInput.value = text
+  document.body.appendChild(tempInput)
+  tempInput.select()
+  document.execCommand('copy')
+  document.body.removeChild(tempInput)
+
+  // Show toast
+  const toast = document.getElementById('copy-toast')
+  toast.classList.add('show')
+  setTimeout(() => {
+    toast.classList.remove('show')
+  }, 2000)
+}
+
 // Initialize AOS (Animate On Scroll)
 AOS.init()

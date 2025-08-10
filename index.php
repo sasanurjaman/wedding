@@ -246,45 +246,160 @@
                 <hr class="my-0 mx-0">
             </div>
             <div id="lightgallery">
-                <a href="asset/img/1.jpg" class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                <a href="asset/img/1.jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
                     <img src="asset/img/1.jpg" class="img-fluid rounded shadow-sm" alt="Image 1">
                 </a>
-                <a href="asset/img/2.jpg" class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                <a href="asset/img/2.jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
                     <img src="asset/img/2.jpg" class="img-fluid rounded shadow-sm" alt="Image 2">
                 </a>
-                <a href="asset/img/3.jpg" class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                <a href="asset/img/3.jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
                     <img src="asset/img/3.jpg" class="img-fluid rounded shadow-sm" alt="Image 3">
                 </a>
-                <a href="asset/img/4.jpg" class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                <a href="asset/img/4.jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
                     <img src="asset/img/4.jpg" class="img-fluid rounded shadow-sm" alt="Image 4">
                 </a>
-                <a href="asset/img/gallery-1.jpg" class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                <a href="asset/img/gallery-1.jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
                     <img src="asset/img/gallery-1.jpg" class="img-fluid rounded shadow-sm" alt="Image 5">
                 </a>
-                <a href="asset/img/gallery-2.jpg" class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                <a href="asset/img/gallery-2.jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
                     <img src="asset/img/gallery-2.jpg" class="img-fluid rounded shadow-sm" alt="Image 6">
                 </a>
-                <a href="asset/img/gallery-3.jpg" class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                <a href="asset/img/gallery-3.jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
                     <img src="asset/img/gallery-3.jpg" class="img-fluid rounded shadow-sm" alt="Image 7">
                 </a>
-                <a href="asset/img/gallery-4.jpg" class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                <a href="asset/img/gallery-4.jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
                     <img src="asset/img/gallery-4.jpg" class="img-fluid rounded shadow-sm" alt="Image 8">
                 </a>
-                <a href="asset/img/gallery-6.jpg" class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                <a href="asset/img/gallery-6.jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
                     <img src="asset/img/gallery-6.jpg" class="img-fluid rounded shadow-sm" alt="Image 10">
                 </a>
-                <a href="asset/img/gallery-7.jpg" class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                <a href="asset/img/gallery-7.jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
                     <img src="asset/img/gallery-7.jpg" class="img-fluid rounded shadow-sm" alt="Image 11">
                 </a>
-                <a href="asset/img/gallery-8.jpg" class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                <a href="asset/img/gallery-8.jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
                     <img src="asset/img/gallery-8.jpg" class="img-fluid rounded shadow-sm" alt="Image 12">
                 </a>
-                <a href="asset/img/gallery-9.jpg" class="gallery-item" data-aos="fade-up" data-aos-duration="1000">
+                <a href="asset/img/gallery-9.jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
                     <img src="asset/img/gallery-9.jpg" class="img-fluid rounded shadow-sm" alt="Image 13">
                 </a>
             </div>
         </div>
     </section>
+
+    <section id="wedding-gift" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" data-aos="fade-up" data-aos-duration="1000">Wedding Gift</h2>
+                <p class="text-muted" data-aos="fade-up" data-aos-duration="1000">
+                    Doa restu Anda adalah hadiah terbaik. Namun jika ingin memberikan tanda kasih, berikut informasi rekening kami.
+                </p>
+            </div>
+
+            <div class="row justify-content-center mt-3 mb-3 p-2" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                data-aos-duration="1000">
+                <div class="col-md-6">
+                    <!-- ATM Style Card -->
+                    <div class="atm-card text-white p-4 position-relative">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <img src="asset/img/SeaBank.png" alt="Seabank" style="height: 35px;">
+                            <span class="small">Seabank</span>
+                        </div>
+
+                        <h5 class="mb-1">Nomor Rekening</h5>
+                        <h3 class="fw-bold" id="rek-number">9012 4622 4849</h3>
+
+                        <div class="mt-3">
+                            <p class="mb-0">Nama Pemilik</p>
+                            <h5 class="fw-bold">Isma Ariyanty Juliani</h5>
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-light btn-sm mt-4" onclick="copyText('901246224849')">
+                                📋 Salin Nomor
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-3 mb-3 p-2" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                data-aos-duration="1000">
+                <div class="col-md-6">
+                    <!-- ATM Style Card -->
+                    <div class="atm-card text-white p-4 position-relative">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <img src="asset/img/bri.png" alt="BRI" style="height: 35px;">
+                            <span class="small">BRI</span>
+                        </div>
+
+                        <h5 class="mb-1">Nomor Rekening</h5>
+                        <h3 class="fw-bold" id="rek-number">4167 0103 1806 532</h3>
+
+                        <div class="mt-3">
+                            <p class="mb-0">Nama Pemilik</p>
+                            <h5 class="fw-bold">Isma Ariyanty Juliani</h5>
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-light btn-sm mt-4" onclick="copyText('416701031806532')">
+                                📋 Salin Nomor
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="disqus" class="disqus row justify-content-center mt-3 mb-3 p-3">
+                <div class="col-md-6">
+                </div>
+            </div>
+            <div id="disqus_thread" data-aos="fade-up" data-aos-duration="1000"></div>
+            <script>
+                /**
+                 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document,
+                        s = d.createElement('script');
+                    s.src = 'https://isma-ecep.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+
+        <!-- Toast -->
+        <div id="copy-toast" class="copy-toast">Nomor rekening tersalin ✅</div>
+    </section>
+
+
+    <style>
+        .copy-toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #333;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: 9999;
+        }
+
+        .copy-toast.show {
+            opacity: 1;
+        }
+    </style>
 
     <!-- LightGallery CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css">

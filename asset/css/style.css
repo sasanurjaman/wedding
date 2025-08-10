@@ -246,6 +246,7 @@ body {
   font-weight: 700;
   color: var(--text-color);
 }
+/* end gallery */
 
 #event .event-container .card {
   width: 30rem;
@@ -297,8 +298,6 @@ body {
   white-space: nowrap;
 }
 
-/* text-shadow 2px 2px 8px rgba(0, 0, 0, 0.6); */
-
 #event .event-container .card .description-date {
   display: flex;
   align-items: center;
@@ -337,6 +336,21 @@ body {
   font-weight: 700;
   color: var(--text-color);
 }
+/* end event */
+
+#wedding-gift .container .atm-card {
+  background: linear-gradient(135deg, #e2e3e4ff, #8f9399ff);
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  font-family: 'Poppins', sans-serif;
+}
+
+#wedding-gift .container h2 {
+  font-family: 'Edu VIC WA NT Hand', cursive;
+  font-weight: 700;
+  color: var(--text-color);
+}
+/* end gift card */
 
 /* media queries */
 @media (max-width: 992px) {
