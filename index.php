@@ -22,11 +22,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css">
     <!-- Optional Animate.css for Hover Effect -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- lenis -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.8/dist/lenis.css">
 
     <!-- custom css -->
     <link rel="stylesheet" href="asset/css/style.css">
     <style>
-
+        .fade-out {
+            opacity: 0;
+            transform: translateY(-50px);
+            transition: all 0.8s ease;
+            pointer-events: none;
+        }
     </style>
 </head>
 
@@ -42,7 +49,7 @@
             <h6>Bpk/Ibu/Saudara/i</h6>
             <h4>Syamsul & Istri</h4>
             <hr>
-            <a href="#hero"><i class="bi bi-envelope-paper-heart mr-2"></i> BUKA UNDANGAN</a>
+            <a href="#countdown" onclick="enableScroll()"><i class="bi bi-envelope-paper-heart mr-2"></i> BUKA UNDANGAN</a>
             <hr>
         </div>
     </section>
@@ -414,9 +421,41 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- AOS (Animate On Scroll) -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+    <!-- lenis -->
+    <script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js"></script>
 
     <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="asset/js/custom.js"></script>
+
+    <script>
+        // disable scroll full page
+        const rootElement = document.querySelector(':root')
+        const heroSection = document.getElementById('hero');
+
+        function disableScroll() {
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft
+            window.onscroll = function() {
+                window.scrollTo(scrollLeft, scrollTop)
+            }
+            rootElement.style.scrollBehavior = 'auto'
+            rootElement.style.overflow = 'hidden'
+        }
+
+        function enableScroll() {
+            // Animasi fade + slide
+            heroSection.classList.add("fade-out");
+            setTimeout(() => {
+                heroSection.remove();
+                AOS.refresh();
+                window.onscroll = function() {}
+                rootElement.style.scrollBehavior = 'smooth'
+                rootElement.style.overflow = 'auto'
+            }, 1000);
+        }
+
+        disableScroll()
+    </script>
 
 </body>
 
