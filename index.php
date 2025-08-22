@@ -49,7 +49,7 @@
             <h6>Bpk/Ibu/Saudara/i</h6>
             <h4>Syamsul & Istri</h4>
             <hr>
-            <a href="#countdown" onclick="enableScroll()"><i class="bi bi-envelope-paper-heart mr-2"></i> BUKA UNDANGAN</a>
+            <a href="#" onclick="enableScroll()"><i class="bi bi-envelope-paper-heart mr-2"></i> BUKA UNDANGAN</a>
             <hr>
         </div>
     </section>
@@ -386,6 +386,13 @@
         <div id="copy-toast" class="copy-toast">Nomor rekening tersalin ✅</div>
     </section>
 
+    <div id="audio-container">
+        <audio id="audio" loop>
+            <source src="asset/audio/backsound.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <div id="audio-icon" class="audio-icon d-none"><i class="bi bi-disc"></i></div>
+    </div>
 
     <style>
         .copy-toast {
@@ -448,11 +455,39 @@
             setTimeout(() => {
                 heroSection.remove();
                 AOS.refresh();
-                window.onscroll = function() {}
-                rootElement.style.scrollBehavior = 'smooth'
-                rootElement.style.overflow = 'auto'
+                window.onscroll = function() {
+                    rootElement.style.scrollBehavior = 'smooth'
+                    rootElement.style.overflow = 'auto'
+                }
             }, 1000);
+            playaudio();
         }
+
+        const audio = document.getElementById('audio');
+        const audioIcon = document.getElementById('audio-icon');
+        const audioIconI = document.querySelector('#audio-icon i');
+
+        function playaudio() {
+            if (audio.paused) {
+                audio.play();
+                audioIcon.classList.remove('d-none');
+            } else {
+                audio.pause();
+                audioIcon.classList.add('d-none');
+            }
+        }
+
+        audioIcon.onclick = function() {
+            if (audio.paused) {
+                audio.play();
+                audioIconI.classList.remove('bi-pause-circle');
+                audioIconI.classList.add('bi-disc');
+            } else {
+                audio.pause();
+                audioIconI.classList.remove('bi-disc');
+                audioIconI.classList.add('bi-pause-circle');
+            }
+        };
 
         disableScroll()
     </script>
