@@ -224,10 +224,9 @@
                         <div>
                             <p class="mb-1 fw-bold">Lokasi:</p>
                             <p class="mb-2">Lapang Voli Kompak, RT/RW 04/05 Kp. Cibojong Ds. Balewangi, Kec Cisurupan - Garut</p>
-                            <a href="#" onclick="window.open('https://maps.app.goo.gl/RS3gKC1uS1UBdKSk9','_blank')" class="btn btn-outline-secondary mt-lg-4 mb-lg-4">
+                            <a href="https://maps.app.goo.gl/UMGPifmMJdt7Ps5X7?g_st=aw" target="_blank" class="btn btn-outline-secondary mt-lg-4 mb-lg-4">
                                 📍 Buka Map
                             </a>
-
                         </div>
                     </div>
                 </div>
@@ -263,10 +262,9 @@
                         <div class="mb-3">
                             <p class="mb-1 fw-bold">Lokasi:</p>
                             <p class="mb-2">Lapang Voli Kompak, RT/RW 04/05 Kp. Cibojong Ds. Balewangi, Kec Cisurupan - Garut</p>
-                            <a href="#" onclick="window.open('https://maps.app.goo.gl/RS3gKC1uS1UBdKSk9','_blank')" class="btn btn-outline-secondary mt-lg-4 mb-lg-4">
+                            <a href="https://maps.app.goo.gl/UMGPifmMJdt7Ps5X7?g_st=aw" target="_blank" class="btn btn-outline-secondary mt-lg-4 mb-lg-4">
                                 📍 Buka Map
                             </a>
-
                         </div>
                     </div>
                 </div>
@@ -455,8 +453,6 @@
             window.onscroll = function() {
                 window.scrollTo(scrollLeft, scrollTop)
             }
-            document.body.style.overflow = 'hidden';
-            document.body.style.height = '100vh';
 
             rootElement.style.scrollBehavior = 'auto'
         }
