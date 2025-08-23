@@ -34,6 +34,25 @@
             transition: all 0.8s ease;
             pointer-events: none;
         }
+
+        .copy-toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #333;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: 9999;
+        }
+
+        .copy-toast.show {
+            opacity: 1;
+        }
     </style>
 </head>
 
@@ -56,12 +75,18 @@
     <!-- end hero -->
 
     <section id="countdown" class="countdown d-flex flex-column align-items-center justify-content-end w-100 min-vh-100 p-3 mx-auto text-center">
-        <div class="slideshow">
-            <div class="slide"></div>
-            <div class="slide"></div>
-            <div class="slide"></div>
+        <!-- Swiper Background -->
+        <div class="swiper countdown-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('/asset/img/1.jpg')"></div>
+                <div class="swiper-slide" style="background-image: url('/asset/img/2.jpg')"></div>
+                <div class="swiper-slide" style="background-image: url('/asset/img/3.jpg')"></div>
+                <div class="swiper-slide" style="background-image: url('/asset/img/4.jpg')"></div>
+            </div>
         </div>
-        <div class="container mb-5"> <!-- mb-5 untuk margin bottom -->
+
+        <!-- Overlay Content -->
+        <div class="container mb-5 position-relative z-10">
             <h5>The Wedding of</h5>
             <h1>Isma & Ecep</h1>
             <!-- Countdown Timer -->
@@ -105,14 +130,14 @@
 
                 <!-- Bride Column -->
                 <div class="col-md-6 vh-100 position-relative">
-                    <div class="swiper bride-swiper h-100">
+                    <div class="swiper swiper-couple bride-swiper h-100">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide bg-cover" style="background-image: url('asset/img/brid-2.jpg');"></div>
                             <div class="swiper-slide bg-cover" style="background-image: url('asset/img/brid-1.jpg');"></div>
                             <!-- Tambah slide jika perlu -->
                         </div>
                     </div>
-                    <div class="couple-info position-absolute bottom-0 start-0 end-0 text-center p-4 text-white">
+                    <div class="couple-info position-absolute bottom-0 start-0 end-0 text-center p-4">
                         <h2 class="mb-2">Isma Ariyanty Juliani</h2>
                         <p class="mb-0">Putri dari</p>
                         <p class="mb-0">Bpk. Rokib (Alm) & Ibu. Yati (Almh)</p>
@@ -121,13 +146,13 @@
 
                 <!-- Groom Column -->
                 <div class="col-md-6 vh-100 position-relative">
-                    <div class="swiper groom-swiper h-100">
+                    <div class="swiper swiper-couple groom-swiper h-100">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide bg-cover" style="background-image: url('asset/img/groom-2.jpg');"></div>
                             <div class="swiper-slide bg-cover" style="background-image: url('asset/img/groom-1.jpg');"></div>
                         </div>
                     </div>
-                    <div class="couple-info position-absolute bottom-0 start-0 end-0 text-center p-4 text-white">
+                    <div class="couple-info position-absolute bottom-0 start-0 end-0 text-center p-4">
                         <h2 class="mb-2">Ecep Pirman Nurpatwa</h2>
                         <p class="mb-0">Putra dari</p>
                         <p class="mb-0">Bpk. Sahrudin (Alm) & Ibu. Sumartini</p>
@@ -151,8 +176,8 @@
         <!-- Swiper Background -->
         <div class="swiper event-swiper position-absolute top-0 start-0 w-100 z-n1">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image: url('asset/img/event-1.jpg'); background-size: cover; background-position: center;"></div>
-                <div class="swiper-slide" style="background-image: url('asset/img/event-2.jpg'); background-size: cover; background-position: center;"></div>
+                <div class="swiper-slide bg-cover" style="background-image: url('asset/img/event-1.jpg');"></div>
+                <div class="swiper-slide bg-cover" style="background-image: url('asset/img/event-2.jpg');"></div>
             </div>
         </div>
 
@@ -391,29 +416,8 @@
             <source src="asset/audio/backsound.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
-        <div id="audio-icon" class="audio-icon d-none"><i class="bi bi-disc"></i></div>
+        <div id="audio-icon" class="audio-icon"><i class="bi bi-disc"></i></div>
     </div>
-
-    <style>
-        .copy-toast {
-            position: fixed;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #333;
-            color: #fff;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 14px;
-            opacity: 0;
-            transition: opacity 0.4s ease;
-            z-index: 9999;
-        }
-
-        .copy-toast.show {
-            opacity: 1;
-        }
-    </style>
 
     <!-- LightGallery CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css">
@@ -433,64 +437,6 @@
 
     <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="asset/js/custom.js"></script>
-
-    <script>
-        // disable scroll full page
-        const rootElement = document.querySelector(':root')
-        const heroSection = document.getElementById('hero');
-
-        function disableScroll() {
-            scrollTop = window.pageYOffset || document.documentElement.scrollTop
-            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft
-            window.onscroll = function() {
-                window.scrollTo(scrollLeft, scrollTop)
-            }
-            rootElement.style.scrollBehavior = 'auto'
-            rootElement.style.overflow = 'hidden'
-        }
-
-        function enableScroll() {
-            // Animasi fade + slide
-            heroSection.classList.add("fade-out");
-            setTimeout(() => {
-                heroSection.remove();
-                AOS.refresh();
-                window.onscroll = function() {
-                    rootElement.style.scrollBehavior = 'smooth'
-                    rootElement.style.overflow = 'auto'
-                }
-            }, 1000);
-            playaudio();
-        }
-
-        const audio = document.getElementById('audio');
-        const audioIcon = document.getElementById('audio-icon');
-        const audioIconI = document.querySelector('#audio-icon i');
-
-        function playaudio() {
-            if (audio.paused) {
-                audio.play();
-                audioIcon.classList.remove('d-none');
-            } else {
-                audio.pause();
-                audioIcon.classList.add('d-none');
-            }
-        }
-
-        audioIcon.onclick = function() {
-            if (audio.paused) {
-                audio.play();
-                audioIconI.classList.remove('bi-pause-circle');
-                audioIconI.classList.add('bi-disc');
-            } else {
-                audio.pause();
-                audioIconI.classList.remove('bi-disc');
-                audioIconI.classList.add('bi-pause-circle');
-            }
-        };
-
-        disableScroll()
-    </script>
 
 </body>
 

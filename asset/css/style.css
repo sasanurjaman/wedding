@@ -2,7 +2,7 @@
   --primary-color: #a8c1dbdc;
   --text-color: #585757;
   --bg-color: #989a9c41;
-  --text-shadow: 1px 1px 3px rgba(100, 110, 120, 0.5);
+  --text-shadow: 1px 1px 3px rgba(250, 252, 255, 0.863);
 }
 
 body {
@@ -10,58 +10,7 @@ body {
   font-size: 1.2rem;
   text-shadow: var(--text-shadow);
   background-color: var(--bg-color);
-}
-
-.swiper,
-.swiper-slide,
-.swiper-slide img {
-  height: 100%;
-}
-
-.bg-cover {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.swiper-slide img {
-  object-fit: cover;
-}
-
-.couple-info {
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
-  z-index: 10;
-}
-
-.couple-info h2 {
-  font-family: 'Merienda', cursive;
-  font-weight: bold;
-}
-
-.couple-info p {
-  font-family: 'Playfair Display', serif;
-  font-weight: 400;
-}
-
-.welcome {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-
-.welcome h2 {
-  font-family: 'Readex Pro', sans-serif;
-  font-weight: 500;
-}
-
-.welcome h3 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 400;
-  font-style: italic;
-}
-.welcome p {
   font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-style: italic;
 }
 
 .hero::before {
@@ -78,9 +27,9 @@ body {
 }
 
 .hero {
-  background-color: var(--bg-color);
   position: relative;
   min-height: 100vh;
+  background-color: var(--bg-color);
   color: var(--text-color);
 }
 
@@ -111,6 +60,7 @@ body {
   text-decoration: none;
   color: var(--text-color);
 }
+
 .hero a:hover {
   color: var(--primary-color);
 }
@@ -125,8 +75,8 @@ body {
   position: relative;
   overflow: hidden;
   min-height: 100vh;
-  background-color: var(--bg-color);
   color: var(--text-color);
+  background-color: var(--bg-color);
 }
 
 .countdown h5 {
@@ -143,124 +93,102 @@ body {
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
 }
-/* end countdown */
 
-.slideshow {
+.countdown-swiper {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Makes it act as background */
+  z-index: -1;
 }
 
-.slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.countdown-swiper .swiper-slide {
   background-size: cover;
   background-position: center;
-  opacity: 0;
-  animation: slideshow 15s infinite;
 }
+/* end countdown */
 
-.slide:nth-child(1) {
-  background-image: url('/asset/img/1.jpg');
-  animation-delay: 0s;
-}
-
-.slide:nth-child(2) {
-  background-image: url('/asset/img/2.jpg');
-  animation-delay: 5s;
-}
-
-.slide:nth-child(3) {
-  background-image: url('/asset/img/3.jpg');
-  animation-delay: 10s;
-}
-.slide:nth-child(4) {
-  background-image: url('/asset/img/4.jpg');
-  animation-delay: 15s;
-}
-
-@keyframes slideshow {
-  0% {
-    opacity: 0;
-    transform: scale(1);
-  }
-  10% {
-    opacity: 1;
-  }
-  28% {
-    opacity: 1;
-  }
-  38% {
-    opacity: 0;
-    transform: scale(1.1);
-  }
-  100% {
-    opacity: 0;
-  }
-}
-/* end slideshow cooldown */
-
-#lightgallery {
-  column-count: 4;
-  column-gap: 10px;
-}
-
-.gallery-item {
-  display: inline-block;
-  margin-bottom: 10px;
-  width: 100%;
-}
-
-.gallery-item img {
-  width: 100%;
-  display: block;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gallery-item:hover img {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-#gallery hr {
-  border: none;
-  height: 4px;
-  width: 100px;
-  flex-grow: 1;
-  max-width: 200px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    rgba(43, 42, 42, 0.7),
-    transparent
-  );
-}
-
-#gallery h2 {
-  font-family: 'Edu VIC WA NT Hand', cursive;
-  font-weight: 700;
+.welcome {
+  background-color: var(--bg-color);
   color: var(--text-color);
 }
-/* end gallery */
 
-#event .event-container .card {
-  width: 30rem;
-  border: 1px solid #ccc;
-  border-radius: 50px 0 0 0;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px 0 20px 0;
+.welcome h2 {
+  font-family: 'Readex Pro', sans-serif;
+  font-weight: 500;
 }
 
-#event .event-container .card img {
+.welcome h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.welcome p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+/* end welcome */
+
+#couple {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.swiper-couple {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  display: block;
-  border-radius: 50px 0px 0 0;
+  height: 100%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-couple .bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.couple-info h2 {
+  font-family: 'Merienda', cursive;
+  font-weight: bold;
+}
+
+.couple-info p {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+/* end couple */
+#event {
+  position: relative;
+  overflow: hidden;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.event-swiper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.event-swiper .bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #event .event-container h1 {
@@ -281,6 +209,21 @@ body {
     rgba(43, 42, 42, 0.7),
     transparent
   );
+}
+
+#event .event-container .card {
+  width: 30rem;
+  border: 1px solid #ccc;
+  border-radius: 50px 0 0 0;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0 20px 0;
+}
+
+#event .event-container .card img {
+  width: 100%;
+  display: block;
+  border-radius: 50px 0px 0 0;
 }
 
 #event .event-container .card .card-content {
@@ -338,6 +281,50 @@ body {
 }
 /* end event */
 
+#lightgallery {
+  column-count: 4;
+  column-gap: 10px;
+}
+
+.gallery-item {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#gallery hr {
+  border: none;
+  height: 4px;
+  width: 100px;
+  flex-grow: 1;
+  max-width: 200px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(43, 42, 42, 0.7),
+    transparent
+  );
+}
+
+#gallery h2 {
+  font-family: 'Edu VIC WA NT Hand', cursive;
+  font-weight: 700;
+  color: var(--text-color);
+}
+/* end gallery */
+
 #wedding-gift .container .atm-card {
   background: linear-gradient(135deg, #e2e3e4ff, #8f9399ff);
   border-radius: 20px;
@@ -366,7 +353,6 @@ body {
   justify-content: center;
   align-items: center;
   line-height: 0;
-  z-index: 20;
 }
 
 @keyframes rotating {
@@ -377,6 +363,7 @@ body {
     transform: rotate(360deg);
   }
 }
+/* end audio */
 
 /* media queries */
 @media (max-width: 992px) {

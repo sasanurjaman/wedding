@@ -34,8 +34,18 @@ const countdown = setInterval(function () {
 }, 1000)
 /** end Countdown function */
 
+// Initialize Swiper for countdown section
+const countdownSwiper = new Swiper('.countdown-swiper', {
+  effect: 'fade',
+  loop: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  speed: 2000,
+})
 // Swiper untuk bride (normal - slide ke kiri)
-new Swiper('.bride-swiper', {
+const brideSwiper = new Swiper('.bride-swiper', {
   loop: true,
   autoplay: {
     delay: 2000,
@@ -46,7 +56,7 @@ new Swiper('.bride-swiper', {
 })
 
 // Swiper untuk groom (reverse - slide ke kanan)
-new Swiper('.groom-swiper', {
+const groomSwiper = new Swiper('.groom-swiper', {
   loop: true,
   autoplay: {
     delay: 2000,
@@ -72,7 +82,7 @@ const eventSwiper = new Swiper('.event-swiper', {
   loop: true,
   effect: 'creative',
   autoplay: {
-    delay: 2000,
+    delay: 4000,
     disableOnInteraction: false,
   },
   creativeEffect: {
@@ -83,7 +93,7 @@ const eventSwiper = new Swiper('.event-swiper', {
       translate: [0, '100%', 0],
     },
   },
-  speed: 1000,
+  speed: 7000,
 })
 
 function copyText(text) {
