@@ -416,11 +416,8 @@
             <source src="asset/audio/backsound.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
-        <div id="audio-icon" class="audio-icon"><i class="bi bi-disc"></i></div>
+        <div id="audio-icon" class="audio-icon d-none"><i class="bi bi-disc"></i></div>
     </div>
-
-    <!-- LightGallery CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css">
 
     <!-- LightGallery JS -->
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.min.js"></script>
@@ -438,6 +435,54 @@
     <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="asset/js/custom.js"></script>
 
+    <script>
+        const rootElement = document.querySelector(':root')
+        const heroSection = document.getElementById('hero')
+        const audio = document.getElementById('audio')
+        const audioIcon = document.getElementById('audio-icon')
+
+        function disableScroll() {
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft
+
+            // if any scroll is attempted, set this to the previous value
+            window.onscroll = function() {
+                window.scrollTo(scrollLeft, scrollTop)
+            }
+
+            rootElement.style.scrollBehavior = 'auto'
+        }
+
+        function enableScroll() {
+            heroSection.classList.add('fade-out')
+            audioIcon.classList.remove('d-none')
+            setTimeout(() => {
+                heroSection.remove();
+                // Initialize AOS (Animate On Scroll)
+                AOS.init();
+                // Initialize Lenis
+                const lenis = new Lenis({
+                    autoRaf: true,
+                })
+                audio.play();
+                window.onscroll = function() {}
+                rootElement.style.scrollBehavior = 'smooth'
+
+            }, 800);
+        }
+
+        audioIcon.addEventListener('click', function() {
+            if (audio.paused) {
+                audio.play();
+                audioIcon.innerHTML = '<i class="bi bi-disc"></i>';
+            } else {
+                audio.pause();
+                audioIcon.innerHTML = '<i class="bi bi-pause-circle"></i>';
+            }
+        })
+
+        disableScroll()
+    </script>
 </body>
 
 </html>
