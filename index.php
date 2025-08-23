@@ -66,7 +66,11 @@
         <div class="mb-5"> <!-- Div untuk konten bawah -->
             <h6>Kepada Yth</h6>
             <h6>Bpk/Ibu/Saudara/i</h6>
-            <h4>Syamsul & Istri</h4>
+            <?php
+            $name = $_GET['to'] ?? 'Tamu Undangan';
+            $name = str_replace('-', ' ', $name);
+            ?>
+            <h4><?php echo ucwords($name); ?></h4>
             <hr>
             <a href="#" onclick="enableScroll()"><i class="bi bi-envelope-paper-heart mr-2"></i> BUKA UNDANGAN</a>
             <hr>
