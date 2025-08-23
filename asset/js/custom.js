@@ -112,3 +112,11 @@ function copyText(text) {
     toast.classList.remove('show')
   }, 2000)
 }
+
+// Initialize AOS (Animate On Scroll)
+AOS.init()
+
+// Initialize Lenis
+const lenis = new Lenis({
+  autoRaf: true,
+})
