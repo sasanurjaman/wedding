@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  font-size: 2rem;
+  font-size: 1.2rem;
   text-shadow: var(--text-shadow);
   background-color: var(--bg-color);
   font-family: 'Poppins', sans-serif;
@@ -338,6 +338,19 @@ body {
   color: var(--text-color);
 }
 /* end gift card */
+
+#comments {
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#comments .comment-section h4 {
+  font-family: 'Edu VIC WA NT Hand', cursive;
+  font-weight: 700;
+  color: var(--text-color);
+}
 
 #audio-container .audio-icon {
   width: 3rem;

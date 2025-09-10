@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
     <title>Isma & Ecep</title>
     <!-- Bootstrap CSS -->
     <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -73,7 +74,7 @@
             <h4><?php echo ucwords($name); ?></h4>
             <hr>
             <a href="#" onclick="enableScroll()"><i class="bi bi-envelope-paper-heart mr-2"></i> BUKA UNDANGAN</a>
-            <hr>
+            <hr class="mb-3">
         </div>
     </section>
     <!-- end hero -->
@@ -321,9 +322,10 @@
             </div>
         </div>
     </section>
+    <!-- end gallery section -->
 
-    <section id="wedding-gift" class="py-5">
-        <div class="container">
+    <section id="wedding-gift" class="py-5 w-100">
+        <div class="container-fluid">
             <div class="text-center mb-5">
                 <h2 class="fw-bold" data-aos="fade-up" data-aos-duration="1000">Wedding Gift</h2>
                 <p class="text-muted" data-aos="fade-up" data-aos-duration="1000">
@@ -331,89 +333,96 @@
                 </p>
             </div>
 
-            <div class="row justify-content-center mt-3 mb-3 p-2" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
-                data-aos-duration="1000">
-                <div class="col-md-6">
-                    <!-- ATM Style Card -->
-                    <div class="atm-card text-white p-4 position-relative">
-                        <div class="d-flex justify-content-between align-items-center mb-4">
-                            <img src="asset/img/SeaBank.png" alt="Seabank" style="height: 35px;">
-                            <span class="small">Seabank</span>
+            <!-- Wrap card dengan container supaya tetap center -->
+            <div class="container">
+                <div class="row justify-content-center g-4">
+                    <!-- Card 1 -->
+                    <div class="col-12 col-md-6 col-lg-5" data-aos="flip-left" data-aos-duration="1000">
+                        <div class="atm-card text-white p-4 h-100">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <img src="asset/img/SeaBank.png" alt="Seabank" style="height: 35px;">
+                                <span class="small">Seabank</span>
+                            </div>
+
+                            <h5 class="mb-1">Nomor Rekening</h5>
+                            <h3 class="fw-bold">9012 4622 4849</h3>
+
+                            <div class="mt-3">
+                                <p class="mb-0">Nama Pemilik</p>
+                                <h5 class="fw-bold">Isma Ariyanty Juliani</h5>
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-light btn-sm mt-4" onclick="copyText('901246224849')">
+                                    📋 Salin Nomor
+                                </button>
+                            </div>
                         </div>
+                    </div>
 
-                        <h5 class="mb-1">Nomor Rekening</h5>
-                        <h3 class="fw-bold" id="rek-number">9012 4622 4849</h3>
+                    <!-- Card 2 -->
+                    <div class="col-12 col-md-6 col-lg-5" data-aos="flip-left" data-aos-duration="1000">
+                        <div class="atm-card text-white p-4 h-100">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <img src="asset/img/bri.png" alt="BRI" style="height: 35px;">
+                                <span class="small">BRI</span>
+                            </div>
 
-                        <div class="mt-3">
-                            <p class="mb-0">Nama Pemilik</p>
-                            <h5 class="fw-bold">Isma Ariyanty Juliani</h5>
-                        </div>
+                            <h5 class="mb-1">Nomor Rekening</h5>
+                            <h3 class="fw-bold">4167 0103 1806 532</h3>
 
-                        <div class="d-grid gap-2">
-                            <button class="btn btn-light btn-sm mt-4" onclick="copyText('901246224849')">
-                                📋 Salin Nomor
-                            </button>
+                            <div class="mt-3">
+                                <p class="mb-0">Nama Pemilik</p>
+                                <h5 class="fw-bold">Isma Ariyanty Juliani</h5>
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-light btn-sm mt-4" onclick="copyText('416701031806532')">
+                                    📋 Salin Nomor
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="row justify-content-center mt-3 mb-3 p-2" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
-                data-aos-duration="1000">
-                <div class="col-md-6">
-                    <!-- ATM Style Card -->
-                    <div class="atm-card text-white p-4 position-relative">
-                        <div class="d-flex justify-content-between align-items-center mb-4">
-                            <img src="asset/img/bri.png" alt="BRI" style="height: 35px;">
-                            <span class="small">BRI</span>
-                        </div>
-
-                        <h5 class="mb-1">Nomor Rekening</h5>
-                        <h3 class="fw-bold" id="rek-number">4167 0103 1806 532</h3>
-
-                        <div class="mt-3">
-                            <p class="mb-0">Nama Pemilik</p>
-                            <h5 class="fw-bold">Isma Ariyanty Juliani</h5>
-                        </div>
-
-                        <div class="d-grid gap-2">
-                            <button class="btn btn-light btn-sm mt-4" onclick="copyText('416701031806532')">
-                                📋 Salin Nomor
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="disqus" class="disqus row justify-content-center mt-3 mb-3 p-3">
-                <div class="col-md-6">
-                </div>
-            </div>
-            <div id="disqus_thread" data-aos="fade-up" data-aos-duration="1000"></div>
-            <script>
-                /**
-                 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-                /*
-                var disqus_config = function () {
-                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                };
-                */
-                (function() { // DON'T EDIT BELOW THIS LINE
-                    var d = document,
-                        s = d.createElement('script');
-                    s.src = 'https://isma-ecep.disqus.com/embed.js';
-                    s.setAttribute('data-timestamp', +new Date());
-                    (d.head || d.body).appendChild(s);
-                })();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         </div>
 
         <!-- Toast -->
         <div id="copy-toast" class="copy-toast">Nomor rekening tersalin ✅</div>
     </section>
+    <!-- end wedding gift section -->
+
+    <section id="comments" class="container my-5">
+        <div class="row d-flex align-content-center justify-content-center">
+            <div class="col-md-8 comment-section">
+                <h4 class="mb-0 display-5 text-center mt-3 mb-3">Kirim Harapan</h4>
+                <P class="text-center">Berikan ucapan dan doa terbaik Anda untuk putra - putri kami.</P>
+                <div class="card rounded-3 shadow-sm" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="card-body">
+                        <!-- Form Ucapan -->
+
+                        <form id="formUcapan" class="mb-4">
+                            <div class="mb-3">
+                                <input type="text" value="<?php echo ucwords($name); ?>" class="form-control" id="nama" placeholder="Masukkan nama Anda" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="pesan" rows="3" placeholder="Tulis ucapan terbaik Anda..." required></textarea>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-secondary">Kirim Ucapan</button>
+                            </div>
+                        </form>
+
+                        <!-- Daftar Ucapan -->
+                        <h5 class="text-center mb-3">Daftar Ucapan</h5>
+                        <div id="daftarUcapan" class="list-group"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end comment section -->
 
     <div id="audio-container">
         <audio id="audio" loop>
@@ -422,6 +431,7 @@
         </audio>
         <div id="audio-icon" class="audio-icon d-none"><i class="bi bi-disc"></i></div>
     </div>
+    <!-- end audio -->
 
     <!-- LightGallery JS -->
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.min.js"></script>
@@ -487,6 +497,50 @@
 
         disableScroll()
     </script>
+
+    <script>
+        const scriptURL = "https://script.google.com/macros/s/AKfycbwKlh2vkMs-cr7-AyMhsiLGs5PHMDf_HikXG3SZFEGTTHPSCyu8n9HeAFwPyeqP2LiF/exec"; // ganti dengan URL Web App kamu
+
+        // kirim data
+        document.getElementById("formUcapan").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            let nama = document.getElementById("nama").value;
+            let pesan = document.getElementById("pesan").value;
+
+            await fetch(scriptURL, {
+                method: "POST",
+                body: JSON.stringify({
+                    nama,
+                    pesan
+                })
+            });
+
+            document.getElementById("formUcapan").reset();
+            loadUcapan();
+        });
+
+        // ambil & tampilkan ucapan
+        async function loadUcapan() {
+            let res = await fetch(scriptURL);
+            let data = await res.json();
+            let html = "";
+            data.reverse().forEach((item) => {
+                html += `
+        <div class="ucapan-item p-3 shadow-sm bg-light rounded">
+        <div class="d-flex justify-content-between">
+            <h6 class="fw-bold text-primary mb-1">${item.nama}</h6>
+            <small class="text-muted">${new Date(item.waktu).toLocaleString()}</small>
+        </div>
+        <p class="mb-0">${item.pesan}</p>
+        </div>
+        `;
+            });
+            document.getElementById("daftarUcapan").innerHTML = html;
+        }
+
+        loadUcapan();
+    </script>
+
 </body>
 
 </html>
