@@ -59,12 +59,7 @@
 
 <body>
     <section id="hero" class="hero d-flex flex-column align-items-center justify-content-between w-100 min-vh-100 p-3 mx-auto text-center">
-        <div class="mt-0"> <!-- Div untuk konten atas -->
-            <h5>The Wedding Of</h5>
-            <h1>Isma & Ecep</h1>
-        </div>
-
-        <div class="mb-5"> <!-- Div untuk konten bawah -->
+        <div class="mt-0">
             <h6>Kepada Yth</h6>
             <h6>Bpk/Ibu/Saudara/i</h6>
             <?php
@@ -74,7 +69,12 @@
             <h4><?php echo ucwords($name); ?></h4>
             <hr>
             <a href="#" onclick="enableScroll()"><i class="bi bi-envelope-paper-heart mr-2"></i> BUKA UNDANGAN</a>
-            <hr class="mb-3">
+            <hr>
+        </div>
+
+        <div class="mb-5 pb-3">
+            <h5>The Wedding Of</h5>
+            <h1>Isma & Ecep</h1>
         </div>
     </section>
     <!-- end hero -->
@@ -134,7 +134,7 @@
             <div class="row g-0">
 
                 <!-- Bride Column -->
-                <div class="col-md-6 vh-100 position-relative">
+                <div class="col-lg-6 vh-100 position-relative">
                     <div class="swiper swiper-couple bride-swiper h-100">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide bg-cover" style="background-image: url('asset/img/brid-2.jpg');"></div>
@@ -150,7 +150,7 @@
                 </div>
 
                 <!-- Groom Column -->
-                <div class="col-md-6 vh-100 position-relative">
+                <div class="col-lg-6 vh-100 position-relative">
                     <div class="swiper swiper-couple groom-swiper h-100">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide bg-cover" style="background-image: url('asset/img/groom-2.jpg');"></div>
@@ -283,41 +283,47 @@
                 <hr class="my-0 mx-0">
             </div>
             <div id="lightgallery">
-                <a href="asset/img/1.jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
-                    <img src="asset/img/1.jpg" class="img-fluid rounded shadow-sm" alt="Image 1">
+                <a href="asset/img/gallery(1).jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="asset/img/gallery(1).jpg" class="img-fluid rounded shadow-sm" alt="Image 1">
                 </a>
-                <a href="asset/img/2.jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
-                    <img src="asset/img/2.jpg" class="img-fluid rounded shadow-sm" alt="Image 2">
+                <a href="asset/img/gallery(2).jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="asset/img/gallery(2).jpg" class="img-fluid rounded shadow-sm" alt="Image 2">
                 </a>
-                <a href="asset/img/3.jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
-                    <img src="asset/img/3.jpg" class="img-fluid rounded shadow-sm" alt="Image 3">
+                <a href="asset/img/gallery(3).jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="asset/img/gallery(3).jpg" class="img-fluid rounded shadow-sm" alt="Image 3">
                 </a>
-                <a href="asset/img/4.jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
-                    <img src="asset/img/4.jpg" class="img-fluid rounded shadow-sm" alt="Image 4">
+                <a href="asset/img/gallery(4).jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="asset/img/gallery(4).jpg" class="img-fluid rounded shadow-sm" alt="Image 4">
                 </a>
-                <a href="asset/img/gallery-1.jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
-                    <img src="asset/img/gallery-1.jpg" class="img-fluid rounded shadow-sm" alt="Image 5">
+                <a href="asset/img/gallery(5).jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="asset/img/gallery(5).jpg" class="img-fluid rounded shadow-sm" alt="Image 5">
                 </a>
-                <a href="asset/img/gallery-2.jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
-                    <img src="asset/img/gallery-2.jpg" class="img-fluid rounded shadow-sm" alt="Image 6">
+                <a href="asset/img/gallery(6).jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="asset/img/gallery(6).jpg" class="img-fluid rounded shadow-sm" alt="Image 6">
                 </a>
-                <a href="asset/img/gallery-3.jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
-                    <img src="asset/img/gallery-3.jpg" class="img-fluid rounded shadow-sm" alt="Image 7">
+                <a href="asset/img/gallery(7).jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="asset/img/gallery(7).jpg" class="img-fluid rounded shadow-sm" alt="Image 7">
                 </a>
-                <a href="asset/img/gallery-4.jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
-                    <img src="asset/img/gallery-4.jpg" class="img-fluid rounded shadow-sm" alt="Image 8">
+                <a href="asset/img/gallery(8).jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="asset/img/gallery(8).jpg" class="img-fluid rounded shadow-sm" alt="Image 8">
                 </a>
-                <a href="asset/img/gallery-6.jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
-                    <img src="asset/img/gallery-6.jpg" class="img-fluid rounded shadow-sm" alt="Image 10">
+                <a href="asset/img/gallery(9).jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="asset/img/gallery(9).jpg" class="img-fluid rounded shadow-sm" alt="Image 9">
                 </a>
-                <a href="asset/img/gallery-7.jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
-                    <img src="asset/img/gallery-7.jpg" class="img-fluid rounded shadow-sm" alt="Image 11">
+                <a href="asset/img/gallery(10).jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="asset/img/gallery(10).jpg" class="img-fluid rounded shadow-sm" alt="Image 10">
                 </a>
-                <a href="asset/img/gallery-8.jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
-                    <img src="asset/img/gallery-8.jpg" class="img-fluid rounded shadow-sm" alt="Image 12">
+                <a href="asset/img/gallery(11).jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="asset/img/gallery(11).jpg" class="img-fluid rounded shadow-sm" alt="Image 12">
                 </a>
-                <a href="asset/img/gallery-9.jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
-                    <img src="asset/img/gallery-9.jpg" class="img-fluid rounded shadow-sm" alt="Image 13">
+                <a href="asset/img/gallery(12).jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="asset/img/gallery(12).jpg" class="img-fluid rounded shadow-sm" alt="Image 13">
+                </a>
+                <a href="asset/img/gallery(13).jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="asset/img/gallery(13).jpg" class="img-fluid rounded shadow-sm" alt="Image 13">
+                </a>
+                <a href="asset/img/gallery(14).jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="asset/img/gallery(14).jpg" class="img-fluid rounded shadow-sm" alt="Image 14">
                 </a>
             </div>
         </div>
