@@ -383,6 +383,30 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-12 col-md-6 col-lg-5" data-aos="flip-left" data-aos-duration="1000">
+                        <div class="atm-card text-white p-4 h-100">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <img src="asset\img\dana.png" alt="Dana" style="height: 35px;">
+                                <span class="small">Dana</span>
+                            </div>
+
+                            <h5 class="mb-1">Nomor Rekening</h5>
+                            <h3 class="fw-bold">0857 2077 1693</h3>
+
+                            <div class="mt-3">
+                                <p class="mb-0">Nama Pemilik</p>
+                                <h5 class="fw-bold">Isma Ariyanty Juliani</h5>
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-light btn-sm mt-4" onclick="copyText('085720771693')">
+                                    📋 Salin Nomor
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
