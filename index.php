@@ -60,6 +60,11 @@
 <body>
     <section id="hero" class="hero d-flex flex-column align-items-center justify-content-between w-100 min-vh-100 p-3 mx-auto text-center">
         <div class="mt-0">
+            <h5>The Wedding Of</h5>
+            <h1>Isma & Ecep</h1>
+        </div>
+
+        <div class="mb-5 pb-5">
             <h6>Kepada Yth</h6>
             <h6>Bpk/Ibu/Saudara/i</h6>
             <?php
@@ -71,11 +76,6 @@
             <a href="#" onclick="enableScroll()"><i class="bi bi-envelope-paper-heart mr-2"></i> BUKA UNDANGAN</a>
             <hr>
         </div>
-
-        <div class="mb-5 pb-3">
-            <h5>The Wedding Of</h5>
-            <h1>Isma & Ecep</h1>
-        </div>
     </section>
     <!-- end hero -->
 
@@ -86,7 +86,6 @@
                 <div class="swiper-slide" style="background-image: url('/asset/img/1.jpg')"></div>
                 <div class="swiper-slide" style="background-image: url('/asset/img/2.jpg')"></div>
                 <div class="swiper-slide" style="background-image: url('/asset/img/3.jpg')"></div>
-                <div class="swiper-slide" style="background-image: url('/asset/img/4.jpg')"></div>
             </div>
         </div>
 
@@ -312,18 +311,6 @@
                 </a>
                 <a href="asset/img/gallery(10).jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
                     <img src="asset/img/gallery(10).jpg" class="img-fluid rounded shadow-sm" alt="Image 10">
-                </a>
-                <a href="asset/img/gallery(11).jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
-                    <img src="asset/img/gallery(11).jpg" class="img-fluid rounded shadow-sm" alt="Image 12">
-                </a>
-                <a href="asset/img/gallery(12).jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
-                    <img src="asset/img/gallery(12).jpg" class="img-fluid rounded shadow-sm" alt="Image 13">
-                </a>
-                <a href="asset/img/gallery(13).jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
-                    <img src="asset/img/gallery(13).jpg" class="img-fluid rounded shadow-sm" alt="Image 13">
-                </a>
-                <a href="asset/img/gallery(14).jpg" class="gallery-item" data-aos="flip-left" data-aos-duration="1000">
-                    <img src="asset/img/gallery(14).jpg" class="img-fluid rounded shadow-sm" alt="Image 14">
                 </a>
             </div>
         </div>
